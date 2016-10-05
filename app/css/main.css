@@ -1,0 +1,297 @@
+/*fonts*/
+/*colors*/
+@font-face {
+  font-family: 'raleway-regular';
+  src: url("../fonts/raleway-regular/raleway-regular.eot");
+  src: url("../fonts/raleway-regular/raleway-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-regular/raleway-regular.woff2") format("woff2"), url("../fonts/raleway-regular/raleway-regular.woff") format("woff"), url("../fonts/raleway-regular/raleway-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway-extrabold';
+  src: url("../fonts/raleway-extrabold/raleway-extrabold.eot");
+  src: url("../fonts/raleway-extrabold/raleway-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-extrabold/raleway-extrabold.woff2") format("woff2"), url("../fonts/raleway-extrabold/raleway-extrabold.woff") format("woff"), url("../fonts/raleway-extrabold/raleway-extrabold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway-bold';
+  src: url("../fonts/raleway-bold/raleway-bold.eot");
+  src: url("../fonts/raleway-bold/raleway-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-bold/raleway-bold.woff2") format("woff2"), url("../fonts/raleway-bold/raleway-bold.woff") format("woff"), url("../fonts/raleway-bold/raleway-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway-black';
+  src: url("../fonts/raleway-black/raleway-black.eot");
+  src: url("../fonts/raleway-black/raleway-black.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-black/raleway-black.woff2") format("woff2"), url("../fonts/raleway-black/raleway-black.woff") format("woff"), url("../fonts/raleway-black/raleway-black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'opensans-bold';
+  src: url("../fonts/opensans-bold/opensans-bold.eot");
+  src: url("../fonts/opensans-bold/opensans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold/opensans-bold.woff") format("woff"), url("../fonts/opensans-bold/opensans-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lobstertwo-bolditalic';
+  src: url("../fonts/lobstertwo-bolditalic/lobstertwo-bolditalic.eot");
+  src: url("../fonts/lobstertwo-bolditalic/lobstertwo-bolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lobstertwo-bolditalic/lobstertwo-bolditalic.woff2") format("woff2"), url("../fonts/lobstertwo-bolditalic/lobstertwo-bolditalic.woff") format("woff"), url("../fonts/lobstertwo-bolditalic/lobstertwo-bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?l2qqvw");
+  src: url("../fonts/icomoon/icomoon.eot?l2qqvw#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?l2qqvw") format("truetype"), url("../fonts/icomoon/icomoon.woff?l2qqvw") format("woff"), url("../fonts/icomoon/icomoon.svg?l2qqvw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  font-family: "raleway-regular", Arial, sans-serif; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  a:hover {
+    opacity: 0.7; }
+
+/*top-options*/
+/*top-options__left*/
+.top-options {
+  font-size: 13px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px; }
+  .top-options__left {
+    float: left; }
+  .top-options__right {
+    float: right; }
+
+.currency {
+  background: 0;
+  border: 0;
+  outline: 0;
+  font-family: "raleway-regular", Arial, sans-serif;
+  font-size: 13px;
+  margin-right: 8px; }
+
+/*img select*/
+#lang {
+  width: 85px; }
+
+.dd {
+  border: 0;
+  outline: 0; }
+
+.divider {
+  display: none; }
+
+.dd .ddTitle .ddTitleText {
+  padding: 0; }
+
+.ddcommon .ddTitle .ddTitleText img {
+  vertical-align: top; }
+
+/*user*/
+.user {
+  margin-left: 5px; }
+
+.user:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  content: url(../img/arrow-down.png); }
+
+.wishlist {
+  margin-left: 13px; }
+
+.lock {
+  margin-left: 9px; }
+
+.icon-user:before,
+.icon-heart:before,
+.icon-lock:before {
+  padding-right: 10px; }
+
+.top-options-bold {
+  font-family: "raleway-extrabold", Arial, sans-serif;
+  text-transform: uppercase; }
+
+/*top-options__right*/
+.icon-comment-o:before,
+.icon-phone:before {
+  font-size: 16px;
+  margin-right: 10px; }
+
+.chat {
+  margin-right: 20px; }
+
+/*header-moddle*/
+.header-middle {
+  padding-top: 26px; }
+  .header-middle__logo {
+    float: left;
+    margin-right: 43px; }
+  .header-middle__logo-title {
+    font-family: "raleway-black", Arial, sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #279cc7; }
+  .header-middle__logo-sub {
+    display: block;
+    font-family: "raleway-regular", Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #969696; }
+
+.header-middle__search {
+  float: left; }
+  .header-middle__search-input {
+    width: 340px;
+    margin-top: 8px;
+    outline: 0;
+    height: 40px;
+    border: 1px solid #969696;
+    padding: 0 53px;
+    font-family: "raleway-regular", Arial, sans-serif;
+    font-size: 14px;
+    color: #969696;
+    background: #F6F6F6 url("../img/search.png") no-repeat 12px 50%; }
+  .header-middle__search-submit {
+    background-color: #279cc7;
+    border: 0;
+    color: #fff;
+    padding: 11px 25px;
+    margin-left: -5px;
+    font-family: "raleway-bold", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer; }
+
+/*header-middle__shipping*/
+.header-middle__shipping {
+  float: left;
+  margin-left: 43px;
+  border-left: 1px solid #969696;
+  padding-left: 70px;
+  position: relative;
+  margin-top: -5px;
+  height: 70px;
+  padding-top: 10px; }
+  .header-middle__shipping-title {
+    font-size: 18px;
+    font-family: "lobstertwo-bolditalic", Arial, sans-serif;
+    letter-spacing: 0.3px; }
+  .header-middle__shipping-sub {
+    font-size: 14px;
+    font-family: "raleway-regular", Arial, sans-serif;
+    color: #969696;
+    display: block;
+    margin-top: 5px; }
+
+.icon-truck {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  color: #279cc7;
+  font-size: 32px; }
+
+/*header-middle__cart*/
+.header-middle__cart {
+  float: left;
+  text-align: center;
+  background-color: #279cc7;
+  margin-left: 34px;
+  margin-top: -26px; }
+  .header-middle__cart-link {
+    display: block;
+    padding: 20px 55px; }
+  .header-middle__cart-title {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-family: "raleway-black", Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 5px 0; }
+  .header-middle__cart-sub {
+    color: #fff;
+    font-size: 12px;
+    font-family: "raleway-regular", Arial, sans-serif; }
+
+.icon-shopping-cart {
+  color: #fff;
+  font-size: 24px;
+  color: #fff; }
+
+/*menu*/
+.menu {
+  display: block;
+  background-color: #1F1F1F; }
+  .menu__list {
+    float: left; }
+  .menu__item {
+    display: inline-block;
+    position: relative; }
+    .menu__item-sup {
+      position: absolute;
+      top: 0;
+      right: 5px;
+      background-color: red;
+      color: #fff;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      padding: 3px 5px;
+      font-size: 8px;
+      font-family: "opensans-bold", Arial, sans-serif;
+      text-transform: uppercase; }
+      .menu__item-sup--new {
+        background-color: #279cc7; }
+  .menu__link {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-family: "raleway-black", Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 15px 25px; }
+
+.active-link {
+  background-color: #279cc7; }
+
+.icon-home {
+  font-size: 18px; }
+
+/*social*/
+.social {
+  float: right; }
+  .social__list {
+    background-color: #41413F; }
+  .social__item {
+    display: inline-block; }
+  .social__link {
+    color: #969696;
+    font-size: 21px;
+    display: block;
+    padding: 13px 6px; }
+    .social__link:hover {
+      color: #279cc7;
+      opacity: 0.9; }
+
+/*styles to write here*/
+/*slider*/

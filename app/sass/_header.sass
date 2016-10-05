@@ -1,0 +1,213 @@
+*,
+*:before,
+*:after
+	box-sizing: border-box
+
+.container
+	width: 1170px
+	margin: 0 auto
+	font-family: $raleway-regular
+.clearfix:after
+	content: ''
+	display: block
+	clear: both
+a
+	text-decoration: none
+	color: #000
+	transition: all 0.2s ease
+	&:hover
+		opacity: 0.7
+/*top-options*/
+/*top-options__left*/
+.top-options
+	font-size: 13px
+	border-bottom: 1px solid #eee
+	padding-bottom: 10px
+	&__left
+		float: left
+	&__right
+		float: right
+.currency
+	background: 0
+	border: 0
+	outline: 0 
+	font-family: $raleway-regular
+	font-size: 13px
+	margin-right: 8px
+/*img select*/
+#lang
+	width: 85px
+.dd
+	border: 0
+	outline: 0
+.divider
+	display: none
+.dd .ddTitle .ddTitleText
+	padding: 0
+.ddcommon .ddTitle .ddTitleText img
+	vertical-align: top
+/*user*/
+.user
+	margin-left: 5px
+.user:after
+	content: ''
+	width: 8px
+	height: 8px
+	content: url(../img/arrow-down.png)
+.wishlist
+	margin-left: 13px
+.lock
+	margin-left: 9px
+.icon-user:before,
+.icon-heart:before,
+.icon-lock:before
+	padding-right: 10px
+.top-options-bold
+	font-family: $raleway-extrabold
+	text-transform: uppercase
+/*top-options__right*/
+.icon-comment-o:before,
+.icon-phone:before
+	font-size: 16px
+	margin-right: 10px
+.chat
+	margin-right: 20px
+/*header-moddle*/
+.header-middle
+	padding-top: 26px
+	&__logo
+		float: left
+		margin-right: 43px
+	&__logo-title
+		font-family: $raleway-black
+		font-size: 34px
+		text-transform: uppercase
+		color: $accent-color
+	&__logo-sub
+		display: block
+		font-family: $raleway-regular
+		font-size: 14px
+		letter-spacing: 3px
+		color: $grey-color
+.header-middle__search
+	float: left
+	&-input
+		width: 340px
+		margin-top: 8px
+		outline: 0
+		height: 40px
+		border: 1px solid $grey-color
+		padding: 0 53px
+		font-family: $raleway-regular
+		font-size: 14px
+		color: $grey-color
+		background: #F6F6F6 url("../img/search.png") no-repeat 12px 50%
+	&-submit
+		background-color: $accent-color
+		border: 0
+		color: #fff
+		padding: 11px 25px
+		margin-left: -5px
+		font-family: $raleway-bold
+		font-size: 14px
+		line-height: 20px
+		cursor: pointer
+/*header-middle__shipping*/
+.header-middle__shipping
+	float: left
+	margin-left: 43px
+	border-left: 1px solid $grey-color
+	padding-left: 70px
+	position: relative
+	margin-top: -5px
+	height: 70px
+	padding-top: 10px
+	&-title
+		font-size: 18px
+		font-family: $lobstertwo-bolditalic
+		letter-spacing: 0.3px
+	&-sub
+		font-size: 14px
+		font-family: $raleway-regular
+		color: $grey-color
+		display: block
+		margin-top: 5px
+.icon-truck
+	position: absolute
+	top: 10px
+	left: 30px
+	color: $accent-color
+	font-size: 32px
+/*header-middle__cart*/
+.header-middle__cart
+	float: left
+	text-align: center
+	background-color: $accent-color
+	margin-left: 34px
+	margin-top: -26px
+	&-link
+		display: block
+		padding: 20px 55px
+	&-title
+		display: block
+		color: #fff
+		font-size: 14px
+		font-family: $raleway-black
+		text-transform: uppercase
+		margin: 5px 0
+	&-sub
+		color: #fff
+		font-size: 12px
+		font-family: $raleway-regular
+.icon-shopping-cart
+	color: #fff
+	font-size: 24px
+	color: #fff
+/*menu*/
+.menu
+	display: block
+	background-color: #1F1F1F
+	&__list
+		float: left
+	&__item
+		display: inline-block
+		position: relative
+		&-sup
+			position: absolute
+			top: 0
+			right: 5px
+			background-color: red
+			color: #fff
+			border-radius: 10px
+			padding: 3px 5px
+			font-size: 8px
+			font-family: $opensans-bold
+			text-transform: uppercase
+			&--new
+				background-color: $accent-color
+	&__link
+		display: block
+		color: #fff
+		font-size: 14px
+		font-family: $raleway-black
+		text-transform: uppercase
+		padding: 15px 25px
+.active-link
+	background-color: $accent-color
+.icon-home
+	font-size: 18px
+/*social*/
+.social
+	float: right
+	&__list
+		background-color: #41413F
+	&__item
+		display: inline-block
+	&__link
+		color: $grey-color
+		font-size: 21px
+		display: block
+		padding: 13px 6px
+		&:hover
+			color: $accent-color
+			opacity: 0.9

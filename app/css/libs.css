@@ -1,0 +1,585 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-right:before {
+  content: "\e900"; }
+
+.icon-arrow-left:before {
+  content: "\e901"; }
+
+.icon-retweet:before {
+  content: "\e902"; }
+
+.icon-arrows:before {
+  content: "\e902"; }
+
+.icon-loop:before {
+  content: "\e902"; }
+
+.icon-reload:before {
+  content: "\e902"; }
+
+.icon-comment-o:before {
+  content: "\e912"; }
+
+.icon-phone:before {
+  content: "\e90f"; }
+
+.icon-lock:before {
+  content: "\e910"; }
+
+.icon-user:before {
+  content: "\e911"; }
+
+.icon-star-o:before {
+  content: "\e903"; }
+
+.icon-star:before {
+  content: "\e904"; }
+
+.icon-heart:before {
+  content: "\e905"; }
+
+.icon-pinterest:before {
+  content: "\e906"; }
+
+.icon-google-plus:before {
+  content: "\e907"; }
+
+.icon-linkedin:before {
+  content: "\e908"; }
+
+.icon-twitter:before {
+  content: "\e909"; }
+
+.icon-facebook:before {
+  content: "\e90a"; }
+
+.icon-facebook-f:before {
+  content: "\e90a"; }
+
+.icon-shopping-cart:before {
+  content: "\e90b"; }
+
+.icon-truck:before {
+  content: "\e90c"; }
+
+.icon-search:before {
+  content: "\e90d"; }
+
+.icon-home:before {
+  content: "\e90e"; }
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-money {
+  background-image: url(../sprites/sprite.png);
+  background-position: 0px 0px;
+  width: 101px;
+  height: 101px; }
+
+.icon-phone {
+  background-image: url(../sprites/sprite.png);
+  background-position: -101px 0px;
+  width: 101px;
+  height: 101px; }
+
+.icon-red-truck {
+  background-image: url(../sprites/sprite.png);
+  background-position: 0px -101px;
+  width: 101px;
+  height: 101px; }
+
+.borderRadius {
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.borderRadiusTp {
+  -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0; }
+
+.borderRadiusBtm {
+  -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px; }
+
+.ddcommon {
+  position: relative;
+  display: -moz-inline-stack;
+  zoom: 1;
+  display: inline-block;
+  *display: inline;
+  cursor: default; }
+
+.ddcommon ul {
+  padding: 0;
+  margin: 0; }
+
+.ddcommon ul li {
+  list-style-type: none; }
+
+.borderRadiusTp ul li:last-child {
+  -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+  border-bottom: 0 none #c3c3c3; }
+
+.borderRadiusBtm ul li:first-child {
+  -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+  border-bottom: 1 solid #c3c3c3; }
+
+.ddcommon .disabled img, .ddcommon .disabled span, .ddcommon.disabledAll {
+  opacity: .5;
+  /* standard: ff gt 1.5, opera, safari */
+  -ms-filter: "alpha(opacity=50)";
+  /* ie 8 */
+  filter: alpha(opacity=50);
+  /* ie lt 7 */
+  -khtml-opacity: .5;
+  /* safari 1.x */
+  -moz-opacity: .5;
+  /* ff lt 1.5, netscape */
+  color: #999999; }
+
+.ddcommon .clear {
+  clear: both; }
+
+.ddcommon .shadow {
+  -webkit-box-shadow: 5px 5px 5px -5px #888888;
+  box-shadow: 5px 5px 5px -5px #888888; }
+
+.ddcommon input.text {
+  color: #7e7e7e;
+  padding: 0 0 0 0;
+  position: absolute;
+  background: #fff;
+  display: block;
+  width: 98%;
+  height: 98%;
+  left: 2px;
+  top: 0;
+  border: none; }
+
+.ddOutOfVision {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.borderRadius .shadow {
+  -webkit-box-shadow: 5px 5px 5px -5px #888888;
+  box-shadow: 5px 5px 5px -5px #888888; }
+
+.borderRadiusBtm .shadow {
+  -webkit-box-shadow: -5px -5px 5px -5px #888888;
+  box-shadow: -5px -5px 5px -5px #888888; }
+
+.borderRadiusTp .border, .borderRadius .border {
+  -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px; }
+
+.borderRadiusBtm .border {
+  -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0; }
+
+img.fnone {
+  float: none !important; }
+
+.ddcommon .divider {
+  width: 0;
+  height: 100%;
+  position: absolute; }
+
+.ddcommon .ddArrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 4px; }
+
+.ddcommon .ddArrow:hover {
+  background-position: 0 100%; }
+
+.ddcommon .ddTitle {
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  width: 100%; }
+
+.ddcommon .ddTitle .ddTitleText {
+  display: block; }
+
+.ddcommon .ddTitle .ddTitleText .ddTitleText {
+  padding: 0; }
+
+.ddcommon .ddTitle .description {
+  display: block; }
+
+.ddcommon .ddTitle .ddTitleText img {
+  position: relative;
+  vertical-align: middle;
+  float: left; }
+
+.ddcommon .ddChild {
+  position: absolute;
+  display: none;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  zoom: 1;
+  z-index: 9999; }
+
+.ddcommon .ddChild li {
+  clear: both; }
+
+.ddcommon .ddChild li .description {
+  display: block; }
+
+.ddcommon .ddChild li img {
+  border: 0 none;
+  position: relative;
+  vertical-align: middle;
+  float: left; }
+
+.ddcommon .ddChild li.optgroup {
+  padding: 0; }
+
+.ddcommon .ddChild li.optgroup .optgroupTitle {
+  padding: 0 5px;
+  font-weight: bold;
+  font-style: italic; }
+
+.ddcommon .ddChild li.optgroup ul li {
+  padding: 5px 5px 5px 15px; }
+
+.ddcommon .noBorderTop {
+  border-top: none 0  !important;
+  padding: 0;
+  margin: 0; }
+
+/*************** default theme **********************/
+.dd {
+  border: 1px solid #363c42; }
+
+.dd .divider {
+  border-left: 1px solid #363c42;
+  right: 24px; }
+
+.dd .ddArrow {
+  width: 9px;
+  height: 8px;
+  margin-top: -3px;
+  margin-right: 4px;
+  background: url(../../img/arrow-down.png) no-repeat; }
+
+.dd .ddArrow:hover {
+  background-position: 0 100%; }
+
+/*.dd .ddTitle{color:#000;background:transparent url(../_img/asd.jpg) repeat-x left top;}*/
+.dd .ddTitle .ddTitleText {
+  padding: 5px 20px 5px 5px; }
+
+.dd .ddTitle .ddTitleText .ddTitleText {
+  padding: 0; }
+
+.dd .ddTitle .description {
+  font-size: 12px;
+  color: #666; }
+
+.dd .ddTitle .ddTitleText img {
+  padding-right: 5px; }
+
+.dd .ddChild {
+  border: 1px solid #c3c3c3;
+  background-color: #fff;
+  left: -1px; }
+
+.dd .ddChild li {
+  padding: 5px;
+  background-color: #fff;
+  border-bottom: 1px solid #c3c3c3; }
+
+.dd .ddChild li .description {
+  color: #666; }
+
+.dd .ddChild li .ddlabel {
+  color: #333; }
+
+.dd .ddChild li.hover {
+  background-color: #f2f2f2; }
+
+.dd .ddChild li img {
+  padding: 0 6px 0 0; }
+
+.dd .ddChild li.optgroup {
+  padding: 0; }
+
+.dd .ddChild li.optgroup .optgroupTitle {
+  padding: 0 5px;
+  font-weight: bold;
+  font-style: italic; }
+
+.dd .ddChild li.optgroup ul li {
+  padding: 5px 5px 5px 15px; }
+
+.dd .ddChild li.selected {
+  background-color: #d5d5d5;
+  color: #000; }
+
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y; }
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel.owl-loaded {
+  display: block; }
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block; }
+
+.owl-carousel.owl-hidden {
+  opacity: 0; }
+
+.owl-carousel .owl-refresh .owl-item {
+  display: none; }
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d; }
+
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto; }
+
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab; }
+
+.owl-carousel.owl-rtl {
+  direction: rtl; }
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/* 
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-item img {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+/* 
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: scale 100ms ease;
+  transition: scale 100ms ease; }
+
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transition: scale(1.3, 1.3);
+  transition: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1; }
