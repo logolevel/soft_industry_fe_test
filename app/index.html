@@ -9,17 +9,16 @@
 </head>
 <body>
 	<header class="header">
-
 		<div class="top-options">
 			<div class="container clearfix">
 				<div class="top-options__left">
-					<select class="currency" name="" id="">
+					<select class="currency">
 						<option class="currency__item" value="dollar">USD</option>
 						<option class="currency__item" value="gryvnia">UA</option>
 					</select><!-- end currency -->
 					<select class="lang" id="lang" name="lang">
-					    <option value="english" data-image="img/eng.jpg"><span>English</span></option>
-					    <option value="german" data-image="img/ger.jpg"><span>German</span></option>
+					    <option value="english" data-image="img/eng.jpg">English</option>
+					    <option value="german" data-image="img/ger.jpg">German</option>
 					</select>
 					<a href="#" class="user"><i class="icon-user"></i>My Account</a>
 					<a href="#" class="wishlist"><i class="icon-heart"></i>My Wishlist</a>
@@ -102,25 +101,149 @@
 			</div><!-- end menu__social -->
 		</div><!-- end container -->
 	</nav>
-
 	</header><!-- end header -->
 
-	
-
-<!-- 	<div class="slider-wrap">
-		<div class="container">
+	<div class="slider-wrap">
 			<div class="owl-carousel">
-				<div class="item">
-					<img src="img/slide-1.jpg" alt="">
+				<div class="item owl-carousel__item">
+					<img src="img/content/slide-1.jpg" alt="">
+					<span class="owl-carousel__description clearfix">
+						<span class="owl-carousel__description-title">Furniture</span>
+						<span class="owl-carousel__description-sub">
+							<i class="owl-carousel__description-sub-first">Survive The Reality</i>
+							<i class="owl-carousel__description-sub-second">Of Everuday Life</i>
+						</span>
+						<span class="owl-carousel__description-big-title">Collection</span>
+						<a class="owl-carousel__description-button" href="#">Shop Now</a>
+					</span>
 				</div>
-				<div class="item">
-					<img src="img/slide-1.jpg" alt="">
+				<div class="item owl-carousel__item">
+					<img src="img/content/slide-1.jpg" alt="">
 				</div>
-				<div class="item"><img src="img/slide-1.jpg" alt=""></div>
+				<div class="item owl-carousel__item">
+					<img src="img/content/slide-1.jpg" alt="">
+				</div>
 			</div>
-		</div>
-	</div> -->
+	</div>
 
+	<main class="bg-content">
+		<div class="content container">
+			<section class="popular clearfix">
+				<div class="deals">
+					<h1 class="deals__title"><span>Deals</span> of the day</h1>
+					<p class="deals__paragraph">Mauris ut tincidunt nisi, id auctor libero. Etiam aliquet felis et consectetur faucibus. Praesent aliquam, lec tempus consequat,deserunt jowl prosciutto boudin</p>
+					<img class="deals__img" src="img/content/cube-four.jpg" alt="">
+				</div><!-- end deals -->
+				<div class="popular-products">
+					<div class="popular-products__title">
+						<span class="popular-products__title-bold">Popular</span>
+						<span class="popular-products__title-normal">Products</span>
+					</div><!-- end popular-products__title -->
+					<div class="popular-products__item clearfix">
+						<img class="popular-products__item-img" src="img/content/green-char-small.jpg" alt="">
+						<div class="popular-products__item-description">
+							<a href="#!" class="product-view-description__title product-view-description__title--popular">Kazens Dimans</a>
+							<div class="like-rating like-rating--popular">
+								<ul class="rating">
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+								</ul>
+							</div>
+							<span class="product-view-description__price-new">$80.00</span>
+						</div><!-- end popular-products__item-description -->
+					</div><!-- end popular-products__item ONE-->
+					<div class="popular-products__item clearfix">
+						<img class="popular-products__item-img" src="img/content/nightstand-small.jpg" alt="">
+						<div class="popular-products__item-description">
+							<a href="#!" class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</a>
+							<div class="like-rating like-rating--popular">
+								<ul class="rating">
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+								</ul>
+							</div>
+							<span class="product-view-description__price-new">$65.00</span>
+						</div><!-- end popular-products__item-description -->
+					</div><!-- end popular-products__item ONE-->
+					<div class="popular-products__item clearfix">
+						<img class="popular-products__item-img" src="img/content/table-small.jpg" alt="">
+						<div class="popular-products__item-description">
+							<a href="#!" class="product-view-description__title product-view-description__title--popular">Gazenas Mitra</a>
+							<div class="like-rating like-rating--popular">
+								<ul class="rating">
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+									<li class="star icon-star icon-stap--popular"></li>
+								</ul>
+							</div>
+							<span class="product-view-description__price-new">$84.00</span>
+						</div><!-- end popular-products__item-description -->
+					</div><!-- end popular-products__item ONE-->
+				</div><!-- end popular-products -->
+				<div class="product-view">
+					<div class="product-view__timer">
+						<ul class="product-view__timer-list">
+							<li class="product-view__timer-item">
+								<span class="product-view__timer-number">595</span>
+								<span class="product-view__timer-sub">Days</span>
+							</li>
+							<li class="product-view__timer-item">
+								<span class="product-view__timer-number">14</span>
+								<span class="product-view__timer-sub">Hours</span>
+							</li>
+							<li class="product-view__timer-item">
+								<span class="product-view__timer-number">36</span>
+								<span class="product-view__timer-sub">Mins</span>
+							</li>
+							<li class="product-view__timer-item">
+								<span class="product-view__timer-number">12</span>
+								<span class="product-view__timer-sub">Secs</span>
+							</li>
+						</ul>
+					</div><!-- end product-view-timer -->
+					<div class="product-view-img">
+						<img src="img/content/blue-char-big.jpg" alt="">
+					</div><!-- end product-view-img -->
+					<div class="product-view-sale">
+						<span class="product-view-sale-text">Sale</span>
+					</div><!-- end product-view-sale -->
+					<div class="product-view-description">
+						<a href="#!" class="product-view-description__title">
+							Auzan Mirane
+						</a><!-- end product-view-description__title -->
+						<div class="product-view-description__price">
+							<span class="product-view-description__price-old">$95.00</span>
+							<span class="product-view-description__price-new">$80.00</span>
+						</div><!-- end product-view-description__price -->
+						<div class="product-view-description__rating">
+							<div class="like-rating">
+								<ul class="rating">
+									<li class="star icon-star"></li>
+									<li class="star icon-star"></li>
+									<li class="star icon-star"></li>
+									<li class="star icon-star"></li>
+									<li class="star icon-star"></li>
+								</ul>
+							</div>
+						</div><!-- end product-view-description__rating -->
+					</div><!-- end product-view-description -->
+					<div class="product-view-description__controls">
+						<a href="#!"><i class="icon-arrow-left icon-arrow--mini"></i></a>
+						<a href="#!"><i class="icon-arrow-right icon-arrow--mini"></i></a>
+					</div><!-- end product-view-description__controls -->
+
+				</div><!-- end product-view -->
+			</section><!-- end popular -->
+		</div><!-- end content -->
+	</main>
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>

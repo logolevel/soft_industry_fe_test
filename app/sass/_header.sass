@@ -2,9 +2,8 @@
 *:before,
 *:after
 	box-sizing: border-box
-
 .container
-	width: 1170px
+	max-width: 1170px
 	margin: 0 auto
 	font-family: $raleway-regular
 .clearfix:after
@@ -13,7 +12,7 @@
 	clear: both
 a
 	text-decoration: none
-	color: #000
+	color: $black-color
 	transition: all 0.2s ease
 	&:hover
 		opacity: 0.7
@@ -201,13 +200,14 @@ a
 	float: right
 	&__list
 		background-color: #41413F
+		padding: 0 21px
 	&__item
 		display: inline-block
 	&__link
 		color: $grey-color
-		font-size: 21px
+		font-size: 14px
 		display: block
-		padding: 13px 6px
+		padding: 18px 5px
 		&:hover
 			color: $accent-color
 			opacity: 0.9

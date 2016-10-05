@@ -3,3 +3,250 @@
 @import "_header";
 /*styles to write here*/
 /*slider*/
+.owl-carousel__item
+	position: relative
+	img
+		height: 770px
+.owl-carousel__description
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	margin: auto
+	width: 510px
+	padding-top: 155px
+	&-title
+		font-size: 48px
+		text-transform: uppercase
+		font-family: $raleway-bold
+		color: #e4d16b
+		float: left
+	&-sub
+		color: #fff
+		border-left: 1px solid #fff
+		float: left
+		font-size: 14px
+		font-family: $raleway-bold
+		margin-left: 15px
+		margin-top: 5px
+		padding-left: 15px
+		line-height: 18px
+		&-second
+			display: block
+	&-big-title
+		font-size: 80px
+		text-transform: uppercase
+		font-family: $raleway-extrabold
+		color: #fff
+		display: block
+		padding-top: 55px
+	&-button
+		color: #fff
+		border: 1px solid #fff
+		text-transform: uppercase
+		padding: 12px 20px
+		font-size: 14px
+		font-family: $opensans-bold
+		width: 130px
+		display: block
+		margin: 0 auto
+		margin-top: 27px
+/*owl control*/
+.slider-wrap .owl-nav div
+	width: 37px
+	height: 60px
+	position: absolute
+	top: 400px
+.slider-wrap .owl-prev
+	left: 0
+.slider-wrap .owl-next
+	right: 0
+.icon-arrow-left,
+.icon-arrow-right
+	font-size: 45px
+	color: #fff
+/*dots*/
+.slider-wrap .owl-dots 
+	width: 100%
+	text-align: center
+	margin-top: -100px
+.slider-wrap .owl-dot 
+	width: 10px
+	height: 10px
+	background-color: #fff
+	display: inline-block
+	opacity: 0.9
+	margin-left: 10px
+	border-radius: 50%
+.slider-wrap .owl-dot.active 
+	background-color: #e4d16b
+/*main,content*/
+.bg-content
+	background-color: #eee
+	height: 565px
+.content
+	color: #000
+	background-color: #FFF
+	z-index: 1
+	position: relative
+	margin-top: 24px
+/*deals*/
+.deals
+	// width: 320px
+	width: 27.5%
+	background-color: $accent-color
+	padding: 30px 2.3% 14px
+	color: #fff
+	position: relative
+	float: left
+	img
+		width: 100%
+		height: auto
+	&__title
+		font-family: $raleway-regular
+		font-size: 20px
+		text-transform: uppercase
+		margin-bottom: 30px
+		margin-top: -4px
+		letter-spacing: 0.5px
+		&:after
+			content: ''
+			width: 100%
+			border-bottom: 1px solid #1581a9
+			position: absolute
+			top: 75px
+			left: 0
+		span
+			font-family: $raleway-black
+	&__paragraph
+		font-size: 12px
+		font-family: $raleway-regular
+		padding: 30px 0 27px
+		line-height: 20px
+/*product-view*/
+.product-view
+	margin: 0 24.5% 0 27.5%
+	background-color: #fff
+	position: relative
+	height: 496px
+	&__timer
+		position: absolute
+		top: 27px
+		left: 33px
+	&__timer-list
+		border: 1px solid $grey-color
+		text-align: center
+	&__timer-item
+		border-bottom: 1px solid $grey-color
+		padding: 10px
+	&__timer-item:last-child
+		border-bottom: 0
+	&__timer-number
+		color: #ff5722
+		font-family: $opensans-bold
+		font-size: 16px
+	&__timer-sub
+		display: block
+		font-family: $raleway-regular
+		font-size: 9px
+		text-transform: uppercase
+.product-view-img
+	text-align: center
+	width: 80%
+	margin: auto
+.product-view-sale
+	position: absolute
+	top: 19px
+	right: 30px
+	background-color: #F85D25
+	color: #fff
+	padding: 7px 10px
+	border-radius: 3px
+.product-view-sale-text
+	position: relative
+	text-transform: uppercase
+	font-family: $raleway-black
+	font-size: 12px
+	&:after
+		content: url(../img/corner.png)
+		width: 5px
+		height: 7px
+		position: absolute
+		left: -10px
+		bottom: -7px
+.product-view-description
+	position: absolute
+	bottom: 27px
+	left: 29px
+	&__title
+		font-family: $raleway-black
+		font-size: 14px
+		text-transform: uppercase
+		color: $black-color
+	&__price
+		margin: 10px 0
+	&__price-old
+		font-family: $raleway-regular
+		font-size: 12px
+		text-decoration: line-through
+		color: $grey-color
+	&__price-new
+		font-family: $opensans-bold
+		font-size: 16px
+		color: #e13131
+/*like raiting*/
+.rating
+	padding: 0
+	margin: 0
+.rating li
+	cursor: pointer
+	display: inline-block
+	list-style-type: none
+	text-transform: none
+.rating.vote-cast .star.selected~.star, .rating:not(.vote-cast):hover .star:hover~.star, .star
+	color: #9ca5aa
+.rating.vote-cast .star, .rating:hover .star
+	color: #ff9600
+/*controls*/
+.product-view-description__controls
+	position: absolute
+	bottom: 67px
+	right: 32px
+.icon-arrow--mini
+	color: $grey-color
+	font-size: 14px
+	border: 1px solid $grey-color
+	padding: 10px 12px
+	margin-left: 5px
+/*popular-products*/
+.popular-products
+	// width: 286px
+	width: 24.5%
+	float: right
+	color: $black-color
+	border-left: 1px solid $grey-color
+	height: 496px
+	&__title
+		font-size: 20px
+		text-transform: uppercase
+		padding: 30px 6%
+	&__title-bold
+		font-family: $raleway-black
+	&__title-normal
+		font-family: $raleway-regular
+	&__item
+		border-top: 1px solid $grey-color
+		padding: 20px 6%
+	&__item-img
+		float: left
+		border: 1px solid $grey-color
+		margin-right: 20px
+	&__item-description
+		margin-top: 3px
+	&__item-description-title
+		display: block
+.like-rating--popular
+	margin: 4px 0
+.icon-stap--popular
+	font-size: 11px
