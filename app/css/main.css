@@ -577,7 +577,8 @@ a {
 
 /*featured title*/
 .featured {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .featured__title {
     margin: 41px 0 30px 0;
     padding: 9px 0;
@@ -628,3 +629,70 @@ a {
   top: 15px;
   right: 9px;
   color: #969696; }
+
+/*featured controls*/
+.icon-arrow-left--featured {
+  bottom: 10px;
+  left: 0; }
+
+.product-view-description__controls--featured {
+  position: relative; }
+
+.icon-arrow--mini--left {
+  position: absolute;
+  top: 193px;
+  left: -5px; }
+
+.icon-arrow--mini--right {
+  position: absolute;
+  top: 193px;
+  right: 1px; }
+
+/*baner*/
+.baner {
+  background-color: #49ccf3;
+  color: #fff;
+  margin: 40px 0 0; }
+  .baner__item {
+    width: 28%;
+    float: left;
+    padding: 11px 0;
+    margin: 0 2.5%; }
+    .baner__item--last {
+      margin-right: 0; }
+    .baner__item--middle {
+      background-color: #13b5e6;
+      position: relative;
+      width: 30%; }
+      .baner__item--middle:before {
+        content: url(../img/blue-arrow-left.png);
+        width: 41px;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        left: -41px; }
+      .baner__item--middle:after {
+        content: url(../img/blue-arrow-right.png);
+        width: 41px;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        right: -41px; }
+    .baner__item-description {
+      display: block;
+      float: left;
+      padding: 45px 10px; }
+    .baner__item-title {
+      font-size: 16px;
+      font-family: "raleway-black", Arial, sans-serif;
+      text-transform: uppercase; }
+    .baner__item-paragraph {
+      font-family: "raleway-regular", Arial, sans-serif;
+      font-size: 12px; }
+  .baner__icon {
+    display: block;
+    float: left; }
+
+/*featured--best-sellers*/
+.featured--best-sellers {
+  margin-bottom: 50px; }
