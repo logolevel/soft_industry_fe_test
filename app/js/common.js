@@ -30,5 +30,23 @@ $('.like-rating ul li').on('click', function() {
     .parent().addClass('vote-cast');
 });
 
+/*menu toggle*/
+
+  function blueaseMenu() {
+    var $trigger = $('.menu__trigger'),
+        $menu = $('.menu__list');
+
+    $trigger.click(function(){
+      $(this).next($menu).slideToggle();
+    });
+
+    $(window).resize(function() {
+      if ( $(window).width() > 880 ) {
+        $menu.removeAttr('style');
+      } 
+    });
+  }
+  blueaseMenu();
+
 
 });

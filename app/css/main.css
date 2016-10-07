@@ -117,7 +117,9 @@ a {
   content: '';
   width: 8px;
   height: 8px;
-  content: url(../img/arrow-down.png); }
+  content: "";
+    content-background-image: url(../sprites/sprite.png);
+    content-background-position: -275px -140px; }
 
 .wishlist {
   margin-left: 13px; }
@@ -126,7 +128,7 @@ a {
   margin-left: 9px; }
 
 .icon-user:before,
-.icon-heart:before,
+.icon-heart--top:before,
 .icon-lock:before {
   padding-right: 10px; }
 
@@ -173,7 +175,7 @@ a {
     font-family: "raleway-regular", Arial, sans-serif;
     font-size: 14px;
     color: #969696;
-    background: #F6F6F6 url("../img/search.png") no-repeat 12px 50%; }
+    background: #F6F6F6 url("../img/content/search.png") no-repeat 12px 50%; }
   .header-middle__search-submit {
     background-color: #279cc7;
     border: 0;
@@ -215,10 +217,9 @@ a {
 
 /*header-middle__cart*/
 .header-middle__cart {
-  float: left;
+  float: right;
   text-align: center;
   background-color: #279cc7;
-  margin-left: 34px;
   margin-top: -26px; }
   .header-middle__cart-link {
     display: block;
@@ -241,6 +242,12 @@ a {
   color: #fff; }
 
 /*menu*/
+.icon-menu {
+  display: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer; }
+
 .menu {
   display: block;
   background-color: #1F1F1F; }
@@ -270,6 +277,8 @@ a {
     font-family: "raleway-black", Arial, sans-serif;
     text-transform: uppercase;
     padding: 15px 25px; }
+  .menu__item--last {
+    margin-right: 0; }
 
 .active-link {
   background-color: #279cc7; }
@@ -473,18 +482,54 @@ a {
   -webkit-border-radius: 3px;
           border-radius: 3px; }
 
+.product-view-sale-new {
+  position: absolute;
+  top: 19px;
+  left: 30px;
+  background-color: #F85D25;
+  color: #fff;
+  padding: 7px 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.product-view-sale--inproduct {
+  top: 10px;
+  right: 10px; }
+
+.product-view-sale--new {
+  top: 10px;
+  left: 10px;
+  background-color: #12B5E7; }
+
+.product-view-sale-text--new {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "raleway-black", Arial, sans-serif;
+  font-size: 12px; }
+  .product-view-sale-text--new:after {
+    content: '';
+    background-image: url(../sprites/sprite.png);
+    background-position: -269px -140px;
+    width: 5px;
+    height: 7px;
+    position: absolute;
+    right: -10px;
+    bottom: -12px; }
+
 .product-view-sale-text {
   position: relative;
   text-transform: uppercase;
   font-family: "raleway-black", Arial, sans-serif;
   font-size: 12px; }
   .product-view-sale-text:after {
-    content: url(../img/corner.png);
+    content: '';
+    background-image: url(../sprites/sprite.png);
+    background-position: -274px -140px;
     width: 5px;
     height: 7px;
     position: absolute;
     left: -10px;
-    bottom: -7px; }
+    bottom: -12px; }
 
 .product-view-description {
   position: absolute;
@@ -602,10 +647,14 @@ a {
       margin-right: 0; }
   .featured__link {
     padding-bottom: 43px;
-    display: block; }
+    display: block;
+    position: relative; }
     .featured__link img {
       width: 100%;
       height: auto; }
+
+.menu__link--last {
+  padding-right: 0; }
 
 .featured__item-addtocart {
   border-top: 1px solid #969696;
@@ -665,14 +714,18 @@ a {
       position: relative;
       width: 30%; }
       .baner__item--middle:before {
-        content: url(../img/blue-arrow-left.png);
+        content: '';
+        background-image: url(../sprites/sprite.png);
+        background-position: -202px 0px;
         width: 41px;
         height: 140px;
         position: absolute;
         top: 0;
         left: -41px; }
       .baner__item--middle:after {
-        content: url(../img/blue-arrow-right.png);
+        content: '';
+        background-image: url(../sprites/sprite.png);
+        background-position: -243px 0px;
         width: 41px;
         height: 140px;
         position: absolute;
@@ -696,3 +749,115 @@ a {
 /*featured--best-sellers*/
 .featured--best-sellers {
   margin-bottom: 50px; }
+
+/*media queries*/
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1150px) {
+  .header-middle__shipping {
+    display: none; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1105px) {
+  .baner__item {
+    margin: 0;
+    width: 33.333333%; }
+  .baner__item--middle {
+    background-color: transparent; }
+    .baner__item--middle:before {
+      background-image: none; }
+    .baner__item--middle:after {
+      background-image: none; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1000px) {
+  .baner {
+    padding-top: 20px; }
+  .baner__item {
+    text-align: center; }
+  .baner__item-description {
+    float: none;
+    padding-top: 20px; }
+  .baner__icon {
+    float: none;
+    display: inline-block; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 880px) {
+  .top-options {
+    display: none; }
+  /*menu*/
+  .menu-wrap {
+    position: relative; }
+  .menu__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #484848;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    display: none; }
+  .menu__item {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #969696; }
+  .menu__item-sup {
+    display: none; }
+  .menu__link:hover {
+    background-color: #279cc7;
+    opacity: 1; }
+  .icon-menu {
+    display: inline-block;
+    line-height: 47px;
+    padding-left: 20px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    /*search*/ }
+    .icon-menu:hover {
+      color: #279cc7; }
+  .header-middle__search {
+    margin: 0 auto; }
+  .header-middle__search-input {
+    width: 200px; }
+  /*deals*/
+  .deals {
+    display: none; }
+  .product-view {
+    margin-left: 0;
+    margin-right: 35%; }
+  .popular-products {
+    width: 35%; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 5px; }
+  body {
+    min-width: 768px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 400px) {
+  /**/ }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

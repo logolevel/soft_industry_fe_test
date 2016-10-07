@@ -52,13 +52,15 @@ a
 	content: ''
 	width: 8px
 	height: 8px
-	content: url(../img/arrow-down.png)
+	content: ''
+  background-image: url(../sprites/sprite.png)
+  background-position: -275px -140px
 .wishlist
 	margin-left: 13px
 .lock
 	margin-left: 9px
 .icon-user:before,
-.icon-heart:before,
+.icon-heart--top:before,
 .icon-lock:before
 	padding-right: 10px
 .top-options-bold
@@ -100,7 +102,7 @@ a
 		font-family: $raleway-regular
 		font-size: 14px
 		color: $grey-color
-		background: #F6F6F6 url("../img/search.png") no-repeat 12px 50%
+		background: #F6F6F6 url("../img/content/search.png") no-repeat 12px 50%
 	&-submit
 		background-color: $accent-color
 		border: 0
@@ -139,10 +141,9 @@ a
 	font-size: 32px
 /*header-middle__cart*/
 .header-middle__cart
-	float: left
+	float: right
 	text-align: center
 	background-color: $accent-color
-	margin-left: 34px
 	margin-top: -26px
 	&-link
 		display: block
@@ -163,6 +164,11 @@ a
 	font-size: 24px
 	color: #fff
 /*menu*/
+.icon-menu
+	display: none
+	color: #fff
+	font-size: 28px
+	cursor: pointer
 .menu
 	display: block
 	background-color: #1F1F1F
@@ -191,6 +197,8 @@ a
 		font-family: $raleway-black
 		text-transform: uppercase
 		padding: 15px 25px
+	&__item--last
+		margin-right: 0
 .active-link
 	background-color: $accent-color
 .icon-home

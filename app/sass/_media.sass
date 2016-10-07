@@ -1,0 +1,119 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1150px)
+	.header-middle__shipping
+		display: none
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1105px)
+	.baner__item
+		margin: 0
+		width: 33.333333%
+	.baner__item--middle
+		background-color: transparent
+		&:before
+			background-image: none
+		&:after
+			background-image: none
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1000px)
+	.baner
+		padding-top: 20px
+	.baner__item
+		text-align: center
+	.baner__item-description
+		float: none
+		padding-top: 20px
+	.baner__icon
+		float: none
+		display: inline-block
+/* Small Devices, Tablets */
+@media only screen and (max-width : 880px)
+	.top-options
+		display: none
+	/*menu*/
+	.menu-wrap
+		position: relative
+	.menu__list
+		position: absolute
+		top: 100%
+		left: 0
+		background-color: $black-color
+		z-index: 99
+		width: 100%
+		text-align: center
+		display: none
+	.menu__item
+		display: block
+		width: 100%
+		border-bottom: 1px solid $grey-color
+	.menu__item-sup
+		display: none
+	.menu__link:hover
+		background-color: $accent-color
+		opacity: 1
+	.icon-menu
+		display: inline-block
+		line-height: 47px
+		padding-left: 20px
+		transition: all 0.2s ease
+		&:hover
+			color: $accent-color
+		/*search*/
+	.header-middle__search
+		margin: 0 auto
+	.header-middle__search-input
+		width: 200px
+	/*deals*/
+	.deals
+		display: none
+	.product-view
+		margin-left: 0
+		margin-right: 35%
+	.popular-products
+		width: 35%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 768px)
+	.container
+		width: 768px
+		padding: 0 5px
+	body
+		min-width: 768px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

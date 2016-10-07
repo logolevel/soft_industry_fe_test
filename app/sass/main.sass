@@ -164,18 +164,49 @@
 	color: #fff
 	padding: 7px 10px
 	border-radius: 3px
+.product-view-sale-new
+	position: absolute
+	top: 19px
+	left: 30px
+	background-color: #F85D25
+	color: #fff
+	padding: 7px 10px
+	border-radius: 3px
+.product-view-sale--inproduct
+	top: 10px
+	right: 10px
+.product-view-sale--new
+	top: 10px
+	left: 10px
+	background-color: #12B5E7
+.product-view-sale-text--new
+	position: relative
+	text-transform: uppercase
+	font-family: $raleway-black
+	font-size: 12px
+	&:after
+		content: ''
+		background-image: url(../sprites/sprite.png)
+		background-position: -269px -140px
+		width: 5px
+		height: 7px
+		position: absolute
+		right: -10px
+		bottom: -12px
 .product-view-sale-text
 	position: relative
 	text-transform: uppercase
 	font-family: $raleway-black
 	font-size: 12px
 	&:after
-		content: url(../img/corner.png)
+		content: ''
+		background-image: url(../sprites/sprite.png)
+		background-position: -274px -140px
 		width: 5px
 		height: 7px
 		position: absolute
 		left: -10px
-		bottom: -7px
+		bottom: -12px
 .product-view-description
 	position: absolute
 	bottom: 27px
@@ -285,9 +316,12 @@
 	&__link
 		padding-bottom: 43px
 		display: block
+		position: relative
 		img
 			width: 100%
 			height: auto
+.menu__link--last
+	padding-right: 0
 .featured__item-addtocart
 	border-top: 1px solid $grey-color
 	position: relative
@@ -339,16 +373,20 @@
 			position: relative
 			width: 30%
 			&:before
-				content: url(../img/blue-arrow-left.png)
-				width: 41px
-				height: 140px
+				content: ''
+				background-image: url(../sprites/sprite.png);
+				background-position: -202px 0px;
+				width: 41px;
+				height: 140px;
 				position: absolute
 				top: 0
 				left: -41px
 			&:after
-				content: url(../img/blue-arrow-right.png)
-				width: 41px
-				height: 140px
+				content: ''
+				background-image: url(../sprites/sprite.png);
+				background-position: -243px 0px;
+				width: 41px;
+				height: 140px;
 				position: absolute
 				top: 0
 				right: -41px
@@ -369,4 +407,7 @@
 /*featured--best-sellers*/
 .featured--best-sellers
 	margin-bottom: 50px
+
+/*media queries*/
+@import "_media";
 		

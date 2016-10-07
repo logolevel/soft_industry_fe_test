@@ -16,6 +16,36 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-arrow-down {
+  background-image: url(../sprites/sprite.png);
+  background-position: -261px -140px;
+  width: 8px;
+  height: 8px;
+}
+.icon-blue-arrow-left {
+  background-image: url(../sprites/sprite.png);
+  background-position: -202px 0px;
+  width: 41px;
+  height: 140px;
+}
+.icon-blue-arrow-right {
+  background-image: url(../sprites/sprite.png);
+  background-position: -243px 0px;
+  width: 41px;
+  height: 140px;
+}
+.icon-blue-corner {
+  background-image: url(../sprites/sprite.png);
+  background-position: -269px -140px;
+  width: 5px;
+  height: 7px;
+}
+.icon-corner {
+  background-image: url(../sprites/sprite.png);
+  background-position: -274px -140px;
+  width: 5px;
+  height: 7px;
+}
 .icon-money {
   background-image: url(../sprites/sprite.png);
   background-position: 0px 0px;
@@ -33,4 +63,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -101px;
   width: 101px;
   height: 101px;
+}
+.icon-search {
+  background-image: url(../sprites/sprite.png);
+  background-position: -243px -140px;
+  width: 18px;
+  height: 18px;
 }
