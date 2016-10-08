@@ -45,7 +45,7 @@ img.fnone{float:none !important}
 /*************** default theme **********************/
 .dd{border:1px solid #363c42;}
 .dd .divider{border-left:1px solid #363c42;; right:24px;}
-.dd .ddArrow{width:9px;height:8px; margin-top:-3px; margin-right: 4px; background:url(../../img/arrow-down.png) no-repeat;}
+.dd .ddArrow{width:9px;height:8px; margin-top:-3px; margin-right: 4px; background:url(../../img/content/arrow-down.png) no-repeat;}
 .dd .ddArrow:hover{background-position:0 100%;}
 /*.dd .ddTitle{color:#000;background:transparent url(../_img/asd.jpg) repeat-x left top;}*/
 .dd .ddTitle .ddTitleText{padding:5px 20px 5px 5px;}
