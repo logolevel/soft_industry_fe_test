@@ -185,7 +185,8 @@ a {
     font-family: "raleway-bold", Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-appearance: none; }
 
 /*header-middle__shipping*/
 .header-middle__shipping {
