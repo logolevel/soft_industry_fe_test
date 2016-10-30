@@ -391,7 +391,7 @@ img.fnone {
   height: 8px;
   margin-top: -3px;
   margin-right: 4px;
-  background: url(../../img/content/arrow-down.png) no-repeat; }
+  background: url(../img/content/arrow-down.png) no-repeat; }
 
 .dd .ddArrow:hover {
   background-position: 0 100%; }
@@ -3695,7 +3695,7 @@ a {
   padding-left: 10px; }
 
 .featured .owl-carousel .owl-item img {
-  max-width: 256px;
+  max-width: 255px;
   padding: 0 2px;
   margin: 0 auto; }
 
