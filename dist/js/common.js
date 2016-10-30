@@ -36,7 +36,7 @@ $(function() {
   $('.quartet-slider').owlCarousel({
       loop:true,
       nav:true,
-      margin: 20,
+      margin: 18,
       responsive:{
           0:{
               items:1
