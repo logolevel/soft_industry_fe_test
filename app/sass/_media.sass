@@ -2,12 +2,23 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1150px)
+	.featured
+		margin-left: 10px
+		margin-right: 10px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1150px)
 	.header-middle__shipping
 		display: none
-
+	/*slider description*/
+	.owl-carousel__description
+		padding-top: 100px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1105px)
+	/*slider description*/
+	.owl-carousel__description
+		padding-top: 65px
 	.baner__item
 		margin: 0
 		width: 33.333333%
@@ -67,28 +78,159 @@
 		margin: 0 auto
 	.header-middle__search-input
 		width: 200px
+	/*slider description*/
+	.owl-carousel__description
+		max-width: 290px
+		padding-top: 60px
+		&-title
+			font-size: 24px
+			line-height: 40px
+		&-big-title
+			font-size: 48px
+			padding-top: 0
+		&-sub
+			font-size: 13px
+			line-height: 15px
 	/*deals*/
 	.deals
-		display: none
-	.product-view
+		width: 100%
+		text-align: center
+		height: auto
+		padding-bottom: 30px
+		img
+			width: 128px
+	.deals__img-wrap
+		width: 512px
+		margin: 0 auto
+	/*popular-slider*/
+	.popular-slider-wrap
+		width: 100%
 		margin-left: 0
-		margin-right: 35%
-	.popular-products
-		width: 35%
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 768px)
 	.container
-		width: 768px
-		padding: 0 5px
-	body
-		min-width: 768px
+		max-width: 768px
+	/*slider description*/
+	.owl-carousel__description
+		padding-top: 40px
+	.owl-carousel__description-button
+		margin-top: 20px
+		width: 114px
+		font-size: 12px
 
+@media only screen and (max-width : 767px)
+	.header-middle__logo
+		width: 100%
+		text-align: center
+		margin: 10px 0
+	.header-middle__search
+		width: 100%
+		text-align: center
+		margin: 5px 0 25px
+	.header-middle__cart
+		width: 100%
+		text-align: center
+		margin-top: 0
+
+@media only screen and (max-width : 710px)
+	.popular-slider-big
+		width: 100%
+	.popular-slider-small
+		width: 100%
+	.product-view
+		height: 430px
+	.popular-products
+		text-align: center
+	.popular-products__title
+		display: none
+	.popular-slider-small__link
+		display: inline-block
+	.popular-products
+		border: 0
+		height: auto
+		margin-bottom: 20px
+	.popular-products__item
+		border: 0
+		padding: 0 5%
+	.popular-products__item-img-wrap
+		float: none
+		margin: 0 auto
+	.popular-slider-big__img-wrap
+		margin: 0 auto
+
+@media only screen and (max-width : 700px)
+	.content
+		margin-top: 0
+	.owl-carousel__description
+		padding-top: 85px
+		max-width: 240px
+	.owl-carousel__description-title
+		font-size: 20px
+		line-height: 30px
+	.owl-carousel__description-sub
+		font-size: 10px
+		line-height: 10px
+	.owl-carousel__description-big-title
+		font-size: 36px
+	.owl-carousel__description-button
+		font-size: 10px
+		width: 100px
+	#main_slider .owl-dots
+		display: none !important
+
+@media only screen and (max-width : 550px)
+	.owl-carousel__description
+		padding-top: 35px
+		max-width: 240px
+	.owl-carousel__description-title
+		font-size: 16px
+		line-height: 30px
+	.popular-slider-big__img-wrap
+		margin-left: 15%
+	/*deals*/
+	.deals__img-wrap
+		width: 256px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px)
+	.baner__item
+		display: block
+		float: none
+		width: 200px
+		margin: 0 auto
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 400px)
-	/**/
+	.owl-carousel__description
+		padding-top: 15px
+		max-width: 165px
+	.owl-carousel__description-big-title
+		font-size: 26px
+	.owl-carousel__description-sub
+		font-size: 6px
+		line-height: 9px
+		margin-left: 8px
+		padding-left: 8px
+	.product-view
+		height: 385px
+	.product-view__timer-item
+		padding: 5px
+	.popular-products__item-description
+		display: none
+	.header-middle__search-input
+		width: 180px
+		font-size: 12px
+		padding: 0 25px 0 40px
+	.slider-wrap .icon-arrow-left,
+	.slider-wrap .icon-arrow-right
+		font-size: 21px
+	.popular-products__item
+		padding: 0 2%
+	.baners img
+		width: 100%
+		display: block
 
 
 /*==========  Mobile First Method  ==========*/

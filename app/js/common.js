@@ -4,8 +4,8 @@ $(function() {
 
   $("#lang").msDropdown();
 
-/*carousel*/
-  $('.owl-carousel').owlCarousel({
+/*main slider*/
+  $('#main_slider').owlCarousel({
       loop:true,
       nav:true,
       margin:0,
@@ -15,7 +15,45 @@ $(function() {
           }
       },
     navText:""
-  })
+  });
+
+/*hash slider*/
+    $('#hash_slider').owlCarousel({
+      items:1,
+      nav:true,
+      loop:false,
+      center:true,
+      margin:10,
+      URLhashListener:true,
+      autoplayHoverPause:true,
+      startPosition: 'URLHash',
+      animateIn: 'lightSpeedIn',
+      animateOut: 'lightSpeedOut',
+      navText:""
+  });
+
+/*carousel x2*/
+  $('.quartet-slider').owlCarousel({
+      loop:true,
+      nav:true,
+      margin: 20,
+      responsive:{
+          0:{
+              items:1
+          },
+          480:{
+              items:2
+          },
+          769:{
+            items:3
+          },
+          1024:{
+            items:4
+          }
+      },
+    navText:""
+  });
+
 /*search nav*/
 $('.owl-prev').addClass('icon-arrow-left');
 $('.owl-next').addClass('icon-arrow-right');

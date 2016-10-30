@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Furniture | Home Furniture Store</title>
-	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -105,7 +104,7 @@
 	</header><!-- end header -->
 
 	<div class="slider-wrap">
-		<div class="owl-carousel">
+		<div id="main_slider">
 			<div class="item owl-carousel__item">
 				<img src="img/content/slide-1.jpg" alt="">
 				<span class="owl-carousel__description clearfix">
@@ -133,114 +132,245 @@
 				<div class="deals">
 					<h1 class="deals__title"><span>Deals</span> of the day</h1>
 					<p class="deals__paragraph">Mauris ut tincidunt nisi, id auctor libero. Etiam aliquet felis et consectetur faucibus. Praesent aliquam, lec tempus consequat,deserunt jowl prosciutto boudin</p>
-					<img class="deals__img" src="img/content/cube-four.jpg" alt="">
+					<div class="deals__img-wrap">
+						<img class="deals__img" src="img/content/living_room.jpg" alt="">
+						<img class="deals__img" src="img/content/kitchen.jpg" alt="">
+						<img class="deals__img" src="img/content/work_place.jpg" alt="">
+						<img class="deals__img" src="img/content/wardrobe.jpg" alt="">
+					</div>
 				</div><!-- end deals -->
-				<div class="popular-products">
-					<div class="popular-products__title">
-						<span class="popular-products__title-bold">Popular</span>
-						<span class="popular-products__title-normal">Products</span>
-					</div><!-- end popular-products__title -->
-					<div class="popular-products__item clearfix">
-						<img class="popular-products__item-img" src="img/content/green-char-small.jpg" alt="">
-						<div class="popular-products__item-description">
-							<a href="#!" class="product-view-description__title product-view-description__title--popular">Kazens Dimans</a>
-							<div class="like-rating like-rating--popular">
-								<ul class="rating">
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-								</ul>
-							</div>
-							<span class="product-view-description__price-new">$80.00</span>
-						</div><!-- end popular-products__item-description -->
-					</div><!-- end popular-products__item ONE-->
-					<div class="popular-products__item clearfix">
-						<img class="popular-products__item-img" src="img/content/nightstand-small.jpg" alt="">
-						<div class="popular-products__item-description">
-							<a href="#!" class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</a>
-							<div class="like-rating like-rating--popular">
-								<ul class="rating">
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-								</ul>
-							</div>
-							<span class="product-view-description__price-new">$65.00</span>
-						</div><!-- end popular-products__item-description -->
-					</div><!-- end popular-products__item ONE-->
-					<div class="popular-products__item clearfix">
-						<img class="popular-products__item-img" src="img/content/table-small.jpg" alt="">
-						<div class="popular-products__item-description">
-							<a href="#!" class="product-view-description__title product-view-description__title--popular">Gazenas Mitra</a>
-							<div class="like-rating like-rating--popular">
-								<ul class="rating">
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-									<li class="star icon-star icon-stap--popular"></li>
-								</ul>
-							</div>
-							<span class="product-view-description__price-new">$84.00</span>
-						</div><!-- end popular-products__item-description -->
-					</div><!-- end popular-products__item ONE-->
-				</div><!-- end popular-products -->
-				<div class="product-view">
-					<div class="product-view__timer">
-						<ul class="product-view__timer-list">
-							<li class="product-view__timer-item">
-								<span class="product-view__timer-number">595</span>
-								<span class="product-view__timer-sub">Days</span>
-							</li>
-							<li class="product-view__timer-item">
-								<span class="product-view__timer-number">14</span>
-								<span class="product-view__timer-sub">Hours</span>
-							</li>
-							<li class="product-view__timer-item">
-								<span class="product-view__timer-number">36</span>
-								<span class="product-view__timer-sub">Mins</span>
-							</li>
-							<li class="product-view__timer-item">
-								<span class="product-view__timer-number">12</span>
-								<span class="product-view__timer-sub">Secs</span>
-							</li>
-						</ul>
-					</div><!-- end product-view-timer -->
-					<div class="product-view-img">
-						<img src="img/content/blue-char-big.jpg" alt="">
-					</div><!-- end product-view-img -->
-					<div class="product-view-sale">
-						<span class="product-view-sale-text">Sale</span>
-					</div><!-- end product-view-sale -->
-					<div class="product-view-description">
-						<a href="#!" class="product-view-description__title">
-							Auzan Mirane
-						</a><!-- end product-view-description__title -->
-						<div class="product-view-description__price">
-							<span class="product-view-description__price-old">$95.00</span>
-							<span class="product-view-description__price-new">$80.00</span>
-						</div><!-- end product-view-description__price -->
-						<div class="product-view-description__rating">
-							<div class="like-rating">
-								<ul class="rating">
-									<li class="star icon-star"></li>
-									<li class="star icon-star"></li>
-									<li class="star icon-star"></li>
-									<li class="star icon-star"></li>
-									<li class="star icon-star"></li>
-								</ul>
-							</div>
-						</div><!-- end product-view-description__rating -->
-					</div><!-- end product-view-description -->
-					<div class="product-view-description__controls">
-						<a href="#!"><i class="icon-arrow-left icon-arrow--mini"></i></a>
-						<a href="#!"><i class="icon-arrow-right icon-arrow--mini"></i></a>
-					</div><!-- end product-view-description__controls -->
-				</div><!-- end product-view -->
+
+
+				<div class="popular-slider-wrap">
+					<div class="popular-slider clearfix">
+
+						<div class="popular-slider-big" id="hash_slider">
+
+							<div class="popular-slider-big__item" data-hash="zero">
+								<div class="product-view">
+									<div class="product-view__timer">
+										<ul class="product-view__timer-list">
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">595</span>
+												<span class="product-view__timer-sub">Days</span>
+											</li>
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">14</span>
+												<span class="product-view__timer-sub">Hours</span>
+											</li>
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">36</span>
+												<span class="product-view__timer-sub">Mins</span>
+											</li>
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">12</span>
+												<span class="product-view__timer-sub">Secs</span>
+											</li>
+										</ul>
+									</div><!-- end product-view-timer -->
+									<div class="popular-slider-big__img-wrap">
+										<img class="popular-slider-big__img" src="img/content/blue-char-400.jpg" alt="">
+									</div><!-- end popular-slider-big__img-wrap -->
+									<div class="product-view-sale">
+										<span class="product-view-sale-text">Sale</span>
+									</div><!-- end product-view-sale -->
+									<div class="product-view-description">
+										<a href="#!" class="product-view-description__title">
+											Auzan Mirane
+										</a><!-- end product-view-description__title -->
+										<div class="product-view-description__price">
+											<span class="product-view-description__price-old">$95.00</span>
+											<span class="product-view-description__price-new">$80.00</span>
+										</div><!-- end product-view-description__price -->
+										<div class="product-view-description__rating">
+											<div class="like-rating">
+												<ul class="rating">
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+												</ul>
+											</div>
+										</div><!-- end product-view-description__rating -->
+									</div><!-- end product-view-description -->
+								</div><!-- end product-view -->
+							</div><!-- end popular-slider-big__item ZERO-->
+
+							<div class="popular-slider-big__item" data-hash="one">
+								<div class="product-view">
+									<div class="product-view__timer">
+										<ul class="product-view__timer-list">
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">24</span>
+												<span class="product-view__timer-sub">Hours</span>
+											</li>
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">00</span>
+												<span class="product-view__timer-sub">Mins</span>
+											</li>
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">05</span>
+												<span class="product-view__timer-sub">Secs</span>
+											</li>
+										</ul>
+									</div><!-- end product-view-timer -->
+									<div class="popular-slider-big__img-wrap">
+										<img class="popular-slider-big__img" src="img/content/nightstand-400.jpg" alt="">
+									</div><!-- end popular-slider-big__img-wrap -->
+									<div class="product-view-sale">
+										<span class="product-view-sale-text">Sale</span>
+									</div><!-- end product-view-sale -->
+									<div class="product-view-description">
+										<a href="#!" class="product-view-description__title">
+											Auzan Mirane
+										</a><!-- end product-view-description__title -->
+										<div class="product-view-description__price">
+											<span class="product-view-description__price-old">$95.00</span>
+											<span class="product-view-description__price-new">$80.00</span>
+										</div><!-- end product-view-description__price -->
+										<div class="product-view-description__rating">
+											<div class="like-rating">
+												<ul class="rating">
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+												</ul>
+											</div>
+										</div><!-- end product-view-description__rating -->
+									</div><!-- end product-view-description -->
+								</div><!-- end product-view -->
+							</div><!-- end popular-slider-big__item ONE-->
+
+							<div class="popular-slider-big__item" data-hash="two">
+								<div class="product-view">
+									<div class="product-view__timer">
+										<ul class="product-view__timer-list">
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">24</span>
+												<span class="product-view__timer-sub">Hours</span>
+											</li>
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">00</span>
+												<span class="product-view__timer-sub">Mins</span>
+											</li>
+											<li class="product-view__timer-item">
+												<span class="product-view__timer-number">05</span>
+												<span class="product-view__timer-sub">Secs</span>
+											</li>
+										</ul>
+									</div><!-- end product-view-timer -->
+									<div class="popular-slider-big__img-wrap">
+										<img class="popular-slider-big__img" src="img/content/table-400.jpg" alt="">
+									</div><!-- end popular-slider-big__img-wrap -->
+									<div class="product-view-sale">
+										<span class="product-view-sale-text">Sale</span>
+									</div><!-- end product-view-sale -->
+									<div class="product-view-description">
+										<a href="#!" class="product-view-description__title">
+											Auzan Mirane
+										</a><!-- end product-view-description__title -->
+										<div class="product-view-description__price">
+											<span class="product-view-description__price-old">$95.00</span>
+											<span class="product-view-description__price-new">$80.00</span>
+										</div><!-- end product-view-description__price -->
+										<div class="product-view-description__rating">
+											<div class="like-rating">
+												<ul class="rating">
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+													<li class="star icon-star"></li>
+												</ul>
+											</div>
+										</div><!-- end product-view-description__rating -->
+									</div><!-- end product-view-description -->
+								</div><!-- end product-view -->
+							</div><!-- end popular-slider-big__item TWO-->
+
+						</div><!-- end popular-slider-big -->
+
+						<div class="popular-slider-small">
+
+							<div class="popular-products">
+
+								<div class="popular-products__title">
+									<span class="popular-products__title-bold">Popular</span>
+									<span class="popular-products__title-normal">Products</span>
+								</div><!-- end popular-products__title -->
+
+								<a href="#zero" class="popular-slider-small__link">
+									<div class="popular-products__item clearfix">
+										<div class="popular-products__item-img-wrap">
+											<img class="popular-products__item-img" src="img/content/blue-char-small.jpg" alt="">
+										</div>
+										<div class="popular-products__item-description">
+											<span class="product-view-description__title product-view-description__title--popular">Kazens Dimans</span>
+											<div class="like-rating like-rating--popular">
+												<ul class="rating">
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+												</ul>
+											</div>
+											<span class="product-view-description__price-new">$80.00</span>
+										</div><!-- end popular-products__item-description -->
+									</div><!-- end popular-products__item ZERO-->
+								</a><!-- end popular-slider-small__link ZERO -->
+
+								<a href="#one" class="popular-slider-small__link">
+									<div class="popular-products__item clearfix">
+										<div class="popular-products__item-img-wrap">
+											<img class="popular-products__item-img" src="img/content/green-char-small.jpg" alt="">
+										</div>
+										<div class="popular-products__item-description">
+											<span class="product-view-description__title product-view-description__title--popular">Kazens Dimans</span>
+											<div class="like-rating like-rating--popular">
+												<ul class="rating">
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+												</ul>
+											</div>
+											<span class="product-view-description__price-new">$80.00</span>
+										</div><!-- end popular-products__item-description -->
+									</div><!-- end popular-products__item ONE-->
+								</a><!-- end popular-slider-small__link ONE -->
+
+								<a href="#two" class="popular-slider-small__link">
+									<div class="popular-products__item clearfix">
+										<div class="popular-products__item-img-wrap">
+											<img class="popular-products__item-img" src="img/content/table-small.jpg" alt="">
+										</div>
+										<div class="popular-products__item-description">
+											<span class="product-view-description__title product-view-description__title--popular">Kazens Dimans</span>
+											<div class="like-rating like-rating--popular">
+												<ul class="rating">
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+													<li class="star icon-star icon-stap--popular"></li>
+												</ul>
+											</div>
+											<span class="product-view-description__price-new">$80.00</span>
+										</div><!-- end popular-products__item-description -->
+									</div><!-- end popular-products__item ONE-->
+								</a><!-- end popular-slider-small__link ONE -->
+
+							</div><!-- end popular-products -->
+						</div><!-- end popular-slider-small -->
+
+					</div><!-- end popular-slider -->
+				</div><!-- end popular-wrap -->
+
 			</section><!-- end popular -->
 
 			<div class="baners">
@@ -250,108 +380,116 @@
 			<section class="featured">
 				<h1 class="featured__title"><span class="featured__title-accent">Featured</span> Products</h1>
 				<div class="featured__item-wrap clearfix">
-					<figure class="featured__item">
-						<figcaption>
-							<a class="featured__link" href="#!">
-								<img src="img/content/green-char-big.jpg" alt="green-char" class="featured__img">
-								<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
-								<div class="like-rating like-rating--popular">
-									<ul class="rating">
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-									</ul>
+
+					<div class="quartet-slider featured-slider">
+						<div class="quartet-slider__item">
+							<figure class="featured__item">
+								<figcaption>
+									<a class="featured__link" href="#!">
+										<img class="featured__img" src="img/content/green-char-big.jpg" alt="green-char">
+										<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
+										<div class="like-rating like-rating--popular">
+											<ul class="rating">
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+											</ul>
+										</div>
+										<span class="product-view-description__price-new">$65.00</span>
+									</a>
+								</figcaption>
+								<div class="featured__item-addtocart">
+									<a href="#!" class="icon-retweet"></a>
+									<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
+									<a href="#!" class="icon-heart"></a>
 								</div>
-								<span class="product-view-description__price-new">$65.00</span>
-							</a>
-						</figcaption>
-						<div class="featured__item-addtocart">
-							<a href="#!" class="icon-retweet"></a>
-							<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
-							<a href="#!" class="icon-heart"></a>
-						</div>
-					</figure><!-- end feature__item ONE -->
-					<figure class="featured__item">
-						<figcaption>
-							<a class="featured__link" href="#!">
-								<img src="img/content/nightstand-big.jpg" alt="green-char" class="featured__img">
-								<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
-								<div class="like-rating like-rating--popular">
-									<ul class="rating">
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-									</ul>
+							</figure><!-- end feature__item ONE -->
+						</div><!-- end quartet-slider__item ONE -->
+						<div class="quartet-slider__item">
+							<figure class="featured__item">
+								<figcaption>
+									<a class="featured__link" href="#!">
+										<img class="featured__img" src="img/content/nightstand-big.jpg" alt="green-char">
+										<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
+										<div class="like-rating like-rating--popular">
+											<ul class="rating">
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+											</ul>
+										</div>
+										<span class="product-view-description__price-new">$65.00</span>
+									</a>
+								</figcaption>
+								<div class="featured__item-addtocart">
+									<a href="#!" class="icon-retweet"></a>
+									<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
+									<a href="#!" class="icon-heart icon-heart--absolute"></a>
 								</div>
-								<span class="product-view-description__price-new">$65.00</span>
-							</a>
-						</figcaption>
-						<div class="featured__item-addtocart">
-							<a href="#!" class="icon-retweet"></a>
-							<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
-							<a href="#!" class="icon-heart icon-heart--absolute"></a>
-						</div>
-					</figure><!-- end feature__item TWO -->
-					<figure class="featured__item">
-						<figcaption>
-							<a class="featured__link" href="#!">
-								<img src="img/content/table-big.jpg" alt="green-char" class="featured__img">
-								<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
-								<div class="like-rating like-rating--popular">
-									<ul class="rating">
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-									</ul>
+							</figure><!-- end feature__item TWO -->
+						</div><!-- end quartet-slider__item TWO -->
+						<div class="quartet-slider__item">
+							<figure class="featured__item">
+								<figcaption>
+									<a class="featured__link" href="#!">
+										<img class="featured__img" src="img/content/table-big.jpg" alt="green-char">
+										<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
+										<div class="like-rating like-rating--popular">
+											<ul class="rating">
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+											</ul>
+										</div>
+										<span class="product-view-description__price-new">$65.00</span>
+									</a>
+								</figcaption>
+								<div class="featured__item-addtocart">
+									<a href="#!" class="icon-retweet"></a>
+									<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
+									<a href="#!" class="icon-heart icon-heart--absolute"></a>
 								</div>
-								<span class="product-view-description__price-new">$65.00</span>
-							</a>
-						</figcaption>
-						<div class="featured__item-addtocart">
-							<a href="#!" class="icon-retweet"></a>
-							<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
-							<a href="#!" class="icon-heart icon-heart--absolute"></a>
-						</div>
-					</figure><!-- end feature__item THREE -->
-					<figure class="featured__item featured__item--last">
-						<figcaption>
-							<a class="featured__link" href="#!">
-								<img src="img/content/rack.jpg" alt="green-char" class="featured__img">
-								<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
-								<div class="like-rating like-rating--popular">
-									<ul class="rating">
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-									</ul>
+							</figure><!-- end feature__item THREE -->
+						</div><!-- end quartet-slider__item THREE -->
+						<div class="quartet-slider__item">
+							<figure class="featured__item">
+								<figcaption>
+									<a class="featured__link" href="#!">
+										<img class="featured__img" src="img/content/rack.jpg" alt="green-char">
+										<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
+										<div class="like-rating like-rating--popular">
+											<ul class="rating">
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+											</ul>
+										</div>
+										<span class="product-view-description__price-new">$65.00</span>
+										<div class="product-view-sale-new product-view-sale--new">
+											<span class="product-view-sale-text--new">New</span>
+										</div><!-- end product-view-sale-new-->
+										<div class="product-view-sale product-view-sale--inproduct">
+											<span class="product-view-sale-text">Sale</span>
+										</div><!-- end product-view-sale -->
+									</a>
+								</figcaption>
+								<div class="featured__item-addtocart">
+									<a href="#!" class="icon-retweet"></a>
+									<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
+									<a href="#!" class="icon-heart icon-heart--absolute"></a>
 								</div>
-								<span class="product-view-description__price-new">$65.00</span>
-								<div class="product-view-sale-new product-view-sale--new">
-									<span class="product-view-sale-text--new">New</span>
-								</div><!-- end product-view-sale-new-->
-								<div class="product-view-sale product-view-sale--inproduct">
-									<span class="product-view-sale-text">Sale</span>
-								</div><!-- end product-view-sale -->
-							</a>
-						</figcaption>
-						<div class="featured__item-addtocart">
-							<a href="#!" class="icon-retweet"></a>
-							<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
-							<a href="#!" class="icon-heart icon-heart--absolute"></a>
-						</div>
-					</figure><!-- end feature__item LAST -->
-					<div class="product-view-description__controls--featured">
-						<a href="#!"><i class="icon-arrow-left icon-arrow--mini icon-arrow--mini--left"></i></a>
-						<a href="#!"><i class="icon-arrow-right icon-arrow--mini icon-arrow--mini--right"></i></a>
-					</div><!-- end product-view-description__controls- -features -->
+							</figure><!-- end feature__item LAST -->
+						</div><!-- end quartet-slider__item FOUR -->
+					</div><!-- quartet alider -->
+
 				</div><!-- end featured__item-wrap -->
 			</section><!-- end featured -->
 
@@ -382,105 +520,117 @@
 			<section class="featured featured--best-sellers">
 				<h1 class="featured__title"><span class="featured__title-accent">Best</span> Sellers</h1>
 				<div class="featured__item-wrap clearfix">
-					<figure class="featured__item">
-						<figcaption>
-							<a class="featured__link" href="#!">
-								<img src="img/content/red-char.jpg" alt="green-char" class="featured__img">
-								<span class="product-view-description__title product-view-description__title--popular">Auzam mirape</span>
-								<div class="like-rating like-rating--popular">
-									<ul class="rating">
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-									</ul>
+
+					<div class="quartet-slider featured-slider">
+						<div class="quartet-slider__item">
+							<figure class="featured__item">
+								<figcaption>
+									<a class="featured__link" href="#!">
+										<img src="img/content/red-char.jpg" alt="green-char" class="featured__img">
+										<span class="product-view-description__title product-view-description__title--popular">Auzam mirape</span>
+										<div class="like-rating like-rating--popular">
+											<ul class="rating">
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+											</ul>
+										</div>
+										<span class="product-view-description__price-new">$74.00</span>
+									</a>
+								</figcaption>
+								<div class="featured__item-addtocart">
+									<a href="#!" class="icon-retweet"></a>
+									<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
+									<a href="#!" class="icon-heart icon-heart--absolute"></a>
 								</div>
-								<span class="product-view-description__price-new">$74.00</span>
-							</a>
-						</figcaption>
-						<div class="featured__item-addtocart">
-							<a href="#!" class="icon-retweet"></a>
-							<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
-							<a href="#!" class="icon-heart icon-heart--absolute"></a>
-						</div>
-					</figure><!-- end feature__item ONE -->
-					<figure class="featured__item">
-						<figcaption>
-							<a class="featured__link" href="#!">
-								<img src="img/content/pink-char.jpg" alt="green-char" class="featured__img">
-								<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
-								<div class="like-rating like-rating--popular">
-									<ul class="rating">
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-									</ul>
+							</figure><!-- end feature__item ONE -->
+						</div><!-- end quartet-slider__item ONE-->
+
+						<div class="quartet-slider__item">
+							<figure class="featured__item">
+								<figcaption>
+									<a class="featured__link" href="#!">
+										<img src="img/content/pink-char.jpg" alt="green-char" class="featured__img">
+										<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
+										<div class="like-rating like-rating--popular">
+											<ul class="rating">
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+											</ul>
+										</div>
+										<span class="product-view-description__price-new">$65.00</span>
+									</a>
+								</figcaption>
+								<div class="featured__item-addtocart">
+									<a href="#!" class="icon-retweet"></a>
+									<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
+									<a href="#!" class="icon-heart icon-heart--absolute"></a>
 								</div>
-								<span class="product-view-description__price-new">$65.00</span>
-							</a>
-						</figcaption>
-						<div class="featured__item-addtocart">
-							<a href="#!" class="icon-retweet"></a>
-							<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
-							<a href="#!" class="icon-heart icon-heart--absolute"></a>
-						</div>
-					</figure><!-- end feature__item TWO -->
-					<figure class="featured__item">
-						<figcaption>
-							<a class="featured__link" href="#!">
-								<img src="img/content/round-char.jpg" alt="green-char" class="featured__img">
-								<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
-								<div class="like-rating like-rating--popular">
-									<ul class="rating">
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-									</ul>
+							</figure><!-- end feature__item TWO -->
+						</div><!-- end quartet-slider__item TWO-->
+
+						<div class="quartet-slider__item">
+							<figure class="featured__item">
+								<figcaption>
+									<a class="featured__link" href="#!">
+										<img src="img/content/round-char.jpg" alt="green-char" class="featured__img">
+										<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
+										<div class="like-rating like-rating--popular">
+											<ul class="rating">
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+											</ul>
+										</div>
+										<span class="product-view-description__price-new">$65.00</span>
+										<div class="product-view-sale product-view-sale--inproduct">
+											<span class="product-view-sale-text">Sale</span>
+										</div><!-- end product-view-sale -->
+									</a>
+								</figcaption>
+								<div class="featured__item-addtocart">
+									<a href="#!" class="icon-retweet"></a>
+									<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
+									<a href="#!" class="icon-heart icon-heart--absolute"></a>
 								</div>
-								<span class="product-view-description__price-new">$65.00</span>
-								<div class="product-view-sale product-view-sale--inproduct">
-									<span class="product-view-sale-text">Sale</span>
-								</div><!-- end product-view-sale -->
-							</a>
-						</figcaption>
-						<div class="featured__item-addtocart">
-							<a href="#!" class="icon-retweet"></a>
-							<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
-							<a href="#!" class="icon-heart icon-heart--absolute"></a>
-						</div>
-					</figure><!-- end feature__item THREE -->
-					<figure class="featured__item featured__item--last">
-						<figcaption>
-							<a class="featured__link" href="#!">
-								<img src="img/content/white-char.jpg" alt="green-char" class="featured__img">
-								<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
-								<div class="like-rating like-rating--popular">
-									<ul class="rating">
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-										<li class="star icon-star icon-stap--popular"></li>
-									</ul>
+							</figure><!-- end feature__item THREE -->
+						</div><!-- end quartet-slider__item THREE-->
+
+						<div class="quartet-slider__item">
+							<figure class="featured__item">
+								<figcaption>
+									<a class="featured__link" href="#!">
+										<img src="img/content/white-char.jpg" alt="green-char" class="featured__img">
+										<span class="product-view-description__title product-view-description__title--popular">Gazenas Mutre</span>
+										<div class="like-rating like-rating--popular">
+											<ul class="rating">
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+												<li class="star icon-star icon-stap--popular"></li>
+											</ul>
+										</div>
+										<span class="product-view-description__price-new">$65.00</span>
+									</a>
+								</figcaption>
+								<div class="featured__item-addtocart">
+									<a href="#!" class="icon-retweet"></a>
+									<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
+									<a href="#!" class="icon-heart icon-heart--absolute"></a>
 								</div>
-								<span class="product-view-description__price-new">$65.00</span>
-							</a>
-						</figcaption>
-						<div class="featured__item-addtocart">
-							<a href="#!" class="icon-retweet"></a>
-							<a href="#!" class="featured__item-addtocart-text">Add to cart</a>
-							<a href="#!" class="icon-heart icon-heart--absolute"></a>
-						</div>
-					</figure><!-- end feature__item LAST -->
-					<div class="product-view-description__controls--featured">
-						<a href="#!"><i class="icon-arrow-left icon-arrow--mini icon-arrow--mini--left"></i></a>
-						<a href="#!"><i class="icon-arrow-right icon-arrow--mini icon-arrow--mini--right"></i></a>
-					</div><!-- end product-view-description__controls- -features -->
+							</figure><!-- end feature__item LAST -->
+						</div><!-- end quartet-slider__item FOUR-->
+
+					</div><!-- end quartet-slider -->
+
 				</div><!-- end featured__item-wrap -->
 			</section><!-- end featured -->
 
@@ -488,8 +638,6 @@
 		</div><!-- end content -->
 	</main>
 
-
-	<script src="js/libs.min.js"></script>
-	<script src="js/common.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 </html>

@@ -25,9 +25,10 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/jquery.min.js',
-		'app/libs/**/*.js'
+		'app/libs/**/*.js',
+		'app/js/common.js'
 	])
-	.pipe(concat('libs.min.js'))
+	.pipe(concat('main.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });
